@@ -1,0 +1,66 @@
+.messages{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1400px;
+        padding: 50px 0px;
+
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; //to put the gig h1 and button at the corners end of the table width.
+
+            button{
+                background-color: #1dbf73;
+                color: white;
+                font-weight: 500;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+
+        table{
+            border: 1px solid lightgray;
+            width: 100%;
+            tr{
+                height: 100px;
+                th{
+                    text-align: left; //to align the text of table on left and in synchronization.
+                }
+                td{
+                    .link{
+                        text-decoration: none;
+                        width: 140px;
+                        padding: 5px;
+                        font-weight: 350;
+                        color: rgb(102, 89, 89);
+                        font-family: "Monteserrat",sans-serif;
+                    }
+                    button{
+                        margin-left: 15px;
+                        background-color: #1dbf73;
+                        color: white;
+                        font-weight: 500;
+                        border-radius: 25px;
+                        border: none;
+                        padding: 10px;
+                        cursor: pointer;
+                        font-size: 12px;
+                    }
+                    &:first-child{
+                        font-weight: 500;
+                    }
+                    &:nth-child(2), //to make the color of the second and the third column of table text color gray and first and fourth column text will remain of black color.
+                    &:nth-child(3){
+                        color: gray;
+                    }
+                
+                }
+                &:active{
+                    background-color: #1dbf730f;   //to give the bg color to the even rows in the table  
+                }
+            }
+        }
+    }
+}

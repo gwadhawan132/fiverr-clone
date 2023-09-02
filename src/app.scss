@@ -1,0 +1,6 @@
+*{
+    .links{ // to prevent the by default styling of link tags of router dom that are used in the navbars
+        text-decoration: none;
+        color:inherit;
+    }
+} 
